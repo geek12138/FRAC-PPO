@@ -11,7 +11,7 @@ import asyncio
 from torch.optim.lr_scheduler import StepLR
 
 class ActorCritic(nn.Module):
-    def __init__(self, input_dim=3, hidden_dim=64):
+    def __init__(self, input_dim=3, hidden_dim=32):
         super().__init__()
         self.shared = nn.Sequential(
             nn.Linear(input_dim, hidden_dim),
